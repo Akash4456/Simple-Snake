@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-container">
+    <header class="game-header">
+      <h1 class="game-title">🐍 Snake Game</h1>
+      <div class="score-container">
+        <span class="score-label">Score</span>
+        <span id="score" class="score-value">0</span>
+      </div>
+    </header>
+    
+    <div class="game-board">
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+      <div class="game-overlay" id="gameOverlay">
+        <div class="overlay-content">
+          <h2 id="overlayTitle">Game Over!</h2>
+          <p id="overlayMessage">Press Space to restart</p>
+          <button id="restartBtn" class="restart-btn">Play Again</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="game-controls">
+      <div class="controls-info">
+        <h3>Controls</h3>
+        <div class="control-grid">
+          <div class="control-item">
+            <span class="key">↑</span>
+            <span class="action">Up</span>
+          </div>
+          <div class="control-item">
+            <span class="key">↓</span>
+            <span class="action">Down</span>
+          </div>
+          <div class="control-item">
+            <span class="key">←</span>
+            <span class="action">Left</span>
+          </div>
+          <div class="control-item">
+            <span class="key">→</span>
+            <span class="action">Right</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
